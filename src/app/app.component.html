@@ -1,0 +1,19 @@
+<div class="container text-center">
+  <h1 class="text-center">Angular Life Cycle Hooks</h1>
+  <div class="container">
+      <button class="btn btn-dark" (click)="increment()">Increment</button>&nbsp;
+      <button class="btn btn-dark" (click)="decrement()">Decrement</button>&nbsp;
+      <button class="btn btn-dark" (click)="add()">Add</button>
+
+      <app-child *ngIf="isVisible"
+      
+      [myCounter]="counter" 
+                 [secondValue]="secondValue" 
+                 [numbers]="numbers">
+
+      Hello, This is coming from Parent Component Content Projection
+      </app-child>
+
+      <button class="btn btn-dark" (click)="setVisibility()">show/hide</button>
+  </div>
+</div>
